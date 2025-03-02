@@ -25,3 +25,33 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
+
+@keyframes slide-up-button {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up-button {
+  animation: slide-up-button 1s ease-out forwards;
+}
