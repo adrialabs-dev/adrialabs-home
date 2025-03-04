@@ -59,7 +59,7 @@ export const Header = () => {
                   items.map((item, index) => (
                     <li key={index}>
                       <Link
-                        className="text-gray-500 transition hover:text-gray-500/75 hover:underline"
+                        className="text-2xl hover:font-bold lg:text-base text-gray-900 relative hover-effect"
                         href={item.link}
                         onClick={(e) => handleSmoothScroll(e, item.link)} 
                       >
@@ -70,7 +70,7 @@ export const Header = () => {
                 }
                 <li>
                       <Link
-                        className="text-gray-500 transition hover:text-gray-500/75 hover:underline"
+                        className="text-2xl hover:font-bold lg:text-base text-gray-900 relative hover-effect"
                         href={'/careers'}
                       >
                         Careers
