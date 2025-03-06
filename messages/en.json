@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "title": "Let's create your ",
+    "title2": "Next Project.",
+    "getStartedButton": "Get Start",
+    "learnMoreButton": "Learn More"
+  },
+  "NavMenu": {
+    "about": "About us",
+    "services": "Services",
+    "contact": "Contact us",
+    "careers": "Careers"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "title": "Hagamos realidad tu",
+    "title2": "próximo proyecto.",
+    "getStartedButton": "Empecemos",
+    "learnMoreButton": "Conoce más"
+  },
+  "NavMenu": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "careers": "Carreras"
+  }
+}
