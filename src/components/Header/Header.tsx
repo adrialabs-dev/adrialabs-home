@@ -86,7 +86,7 @@ export const Header = () => {
                 <div className="flex gap-2">
                   <Link
                     href={`/`}
-                    locale="en"
+                    // locale="en"
                     className={`text-gray-900 hover:text-gray-600 ${locale === 'en' ? 'font-bold' : ''}`}
                     onClick={() => setUserLocale('en')}
                   >
@@ -95,7 +95,7 @@ export const Header = () => {
                   <span className="text-gray-900">|</span>
                   <Link
                     href={`/`}
-                    locale="es"
+                    // locale="es"
                     className={`text-gray-900 hover:text-gray-600 ${locale === 'es' ? 'font-bold' : ''}`}
                     onClick={() => setUserLocale('es')}
                   >
