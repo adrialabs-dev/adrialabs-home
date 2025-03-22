@@ -17,11 +17,11 @@ export const Footer = () => {
       link: '/',
       icon: '/images/icons8-linkedin.svg'
     },
-    {
-      name: 'Github',
-      link: '/',
-      icon: '/images/icons8-github.svg'
-    },
+    // {
+    //   name: 'Github',
+    //   link: '/',
+    //   icon: '/images/icons8-github.svg'
+    // },
   ]
 
   const footerLinks = [
@@ -95,13 +95,13 @@ export const Footer = () => {
               Contact Us
             </p>
             <div className="flex flex-col justify-center items-center mt-4">
-              <small className="text-black font-bold text-lg">Email</small>
+              {/* <small className="text-black font-bold text-lg">Email</small>
               <p className="max-w-xs text-black font-bold text-lg text-center pb-3">
                 hello@adrialabs.com
-              </p>
+              </p> */}
               <small className="text-black font-bold text-lg">Phone</small>
               <p className="max-w-xs text-black font-bold text-lg text-center">
-                +51 999 999 999
+                +51 906 191 636
               </p>
             </div>
           </div>

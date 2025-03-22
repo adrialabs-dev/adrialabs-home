@@ -39,7 +39,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-white fixed w-full top-0 pt-6 lg:pt-0 lg:top-0 z-10">
+    <header className="bg-white fixed w-full top-0 pt-6 pb-6 lg:pt-0 lg:pb-0 lg:top-0 z-10">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">

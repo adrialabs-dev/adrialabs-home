@@ -1,11 +1,13 @@
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
+import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation"
 
 export const Hero = () => {
   const t = useTranslations('HomePage');
     const locale = useLocale();
   return (
-    <section className="relative bg-[url('/images/background.gif')] bg-cover bg-center bg-no-repeat">
+    <section className="relative bg-cover bg-center bg-no-repeat">
+      <BackgroundAnimation />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="absolute inset-0 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
