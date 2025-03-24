@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 export const AboutUs = () => {
   return (
@@ -20,11 +21,7 @@ export const AboutUs = () => {
           </div>
 
           <div>
-            <img
-              src="/images/team-image.jpg"
-              className="rounded"
-              alt="team-image"
-            />
+            <Image src={'/images/team-image.jpg'} alt={'teams-img'} width={700} height={500} className="h-56 w-full object-cover sm:h-full" />
           </div>
         </div>
       </div>

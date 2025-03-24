@@ -1,10 +1,10 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import React from "react";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation"
 
 export const Hero = () => {
   const t = useTranslations('HomePage');
-    const locale = useLocale();
+  
   return (
     <section className="relative bg-cover bg-center bg-no-repeat">
       <BackgroundAnimation />

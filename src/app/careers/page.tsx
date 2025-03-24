@@ -41,26 +41,16 @@ export default function Careers() {
             </div>
           </div>
         </div>
-
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          className="h-56 w-full object-cover sm:h-full"
-        />
+        <Image src={'/images/careers-img.png'} alt={'careers-img'} width={700} height={500} className="h-56 w-full object-cover sm:h-full" />
       </div>
-
-
 
       {/*  */}
 
-
-
-
       <div className="grid h-[800px] bg-white px-4" id="jobs">
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center lg:mt-10">
           <h1 className="text-brand-color-blue text-3xl font-extrabold text-center">{t('listTitle')}</h1>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center lg:justify-center">
           <Image src={'/images/no-jobs.svg'} alt={'no-jobs'} width={500} height={500} />
           <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{t('listNoJobsTitle')}</h1>
           <p className="mt-4 text-gray-500">{t('listNoJobsBodyText')}</p>
