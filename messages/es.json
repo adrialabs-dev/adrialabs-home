@@ -5,10 +5,52 @@
     "getStartedButton": "Empecemos",
     "learnMoreButton": "Conoce más"
   },
+  "ServicePage": {
+    "title": "Te ofrecemos",
+    "mobileDevelopment": {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "description": "Usamos las mejores tecnologías para traer a la vida tu idea de aplicación, totalmente personalizada."
+    },
+    "webDevelopment": {
+      "title": "Desarrollo de Aplicaciones Web y E-commerce",
+      "description": "¿Quieres empezar a vender rápidamente a través de la web? Podemos crear tu plataforma personalizada para que puedas comenzar lo antes posible."
+    },
+    "consulting": {
+      "title": "Servicio de Consultoría",
+      "description": "Podemos ayudarte con lo que necesitas para iniciar tu negocio, además de proporcionarte asesoramiento en las tecnologías que deseas usar."
+    },
+    "button": "Empieza hoy"
+  },
+  "AboutPage": {
+    "title": "Sobre Nosotros",
+    "copy": "Somos un equipo de desarrolladores, diseñadores y estrategas apasionados, dedicados a crear soluciones digitales de alta calidad. Nuestra misión es ayudar a las empresas a prosperar mediante experiencias web y móviles innovadoras, adaptadas a sus necesidades."
+  },
+  "ContactPage": {
+    "title": "Contáctanos",
+    "copy": "Ponte en contacto con nosotros para obtener más información o solicitar una cotización para tu proyecto. Estaremos encantados de atenderte y brindarte toda la asesoría necesaria para que puedas llevar tu idea al siguiente nivel.",
+    "FormFields": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Mensaje",
+      "button": "Enviar Mensaje"
+    }
+  },
   "NavMenu": {
     "about": "Nosotros",
     "services": "Servicios",
     "contact": "Contacto",
     "careers": "Carreras"
+  },
+  "Careers": {
+    "title": "Construye el Futuro con Nosotros – ¡Únete a Nuestro Equipo!",
+    "copy": "Somos un equipo de desarrolladores, diseñadores apasionador por resolver problemas que crean páginas web y soluciones digitales de alta calidad para empresas de todos los tamaños. Si te encanta desarrollar proyectos impactantes, superar límites creativos y trabajar con un equipo dinámico, encajarás perfectamente. ¡Únete a nosotros y ayúdanos a dar forma al futuro de la web, un proyecto a la vez! 🚀",
+    "button": "Comienza hoy",
+    "jobOffersTitle": "Explora nuestras ofertas de trabajo",
+    "noJobsErrorMessage": "Actualmente no tenemos ninguna posición abierta"
+  },
+  "Footer": {
+    "phone": "Telefono",
+    "copy": "Todos los derechos reservados."
   }
 }

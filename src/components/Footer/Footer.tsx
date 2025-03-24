@@ -2,10 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslations, useLocale } from "next-intl";
 
 
 export const Footer = () => {
-
+  const t = useTranslations('NavMenu');
+  const tFooter = useTranslations('Footer');
+  const locale = useLocale();
   const socialLinks = [
     {
       name: 'Instagram',
@@ -27,15 +30,15 @@ export const Footer = () => {
   const footerLinks = [
     {
       link: '#about-us',
-      title: 'About us'
+      title: t('about')
     },
     {
       link: '#services',
-      title: 'Services'
+      title: t('services')
     },
     {
       link: '#contact',
-      title: 'Contact us'
+      title: t('contact')
     },
   ]
 
@@ -83,7 +86,7 @@ export const Footer = () => {
                 href={'/careers'}
                 className="text-2xl hover:font-bold lg:text-xl text-gray-900 relative hover-effect"
               >
-                Careers
+                {t('careers')}
               </Link>
             </div>
           </div>
@@ -92,14 +95,14 @@ export const Footer = () => {
         <div className="flex flex-col items-center justify-center pt-5 lg:pt-0 lg:w-2/3">
           <div className="bg-brand-color-blue rounded-xl opacity-50 pt-5 pb-5 pr-20 pl-20">
             <p className="max-w-xs text-black text-center font-bold text-lg">
-              Contact Us
+              {t('contact')}:
             </p>
             <div className="flex flex-col justify-center items-center mt-4">
               {/* <small className="text-black font-bold text-lg">Email</small>
               <p className="max-w-xs text-black font-bold text-lg text-center pb-3">
                 hello@adrialabs.com
               </p> */}
-              <small className="text-black font-bold text-lg">Phone</small>
+              <small className="text-black font-bold text-lg">{tFooter('phone')}</small>
               <p className="max-w-xs text-black font-bold text-lg text-center">
                 +51 906 191 636
               </p>
@@ -130,7 +133,7 @@ export const Footer = () => {
 
       <div className="flex items-center justify-center w-full pt-5">
         <p className="text-xs text-gray-500">
-          &copy; 2025. AdriaLabs. All rights reserved.
+          &copy; 2025. AdriaLabs. {tFooter('copy')}
         </p>
       </div>
     </footer>

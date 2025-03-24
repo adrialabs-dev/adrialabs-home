@@ -5,10 +5,52 @@
     "getStartedButton": "Get Start",
     "learnMoreButton": "Learn More"
   },
+  "ServicePage": {
+    "title": "What we offer you",
+    "mobileDevelopment": {
+      "title": "Mobile App Development",
+      "description": "We use the best technologies to bring your app idea to life, fully customized."
+    },
+    "webDevelopment": {
+      "title": "Web and E-commerce Development",
+      "description": "Want to start selling online quickly? We can create your customized platform so you can get started as soon as possible."
+    },
+    "consulting": {
+      "title": "Consulting Service",
+      "description": "We can help you with what you need to start your business, as well as provide guidance on the technologies you want to use."
+    },
+    "button": "Get Started Today"
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "copy": "We are a team of passionate developers, designers, and strategists dedicated to building high-quality digital solutions. Our mission is to help businesses thrive by creating innovative web and mobile experiences tailored to their needs."
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "copy": "Get in touch with us for more information or to request a quote for your project. We’ll be happy to assist you and provide all the guidance you need to bring your idea to the next level.",
+    "FormFields": {
+      "name": "Name",
+      "email": "Email address",
+      "phone": "Phone Number",
+      "message": "Message",
+      "button": "Send Message"
+    }
+  },
   "NavMenu": {
     "about": "About us",
     "services": "Services",
     "contact": "Contact us",
     "careers": "Careers"
+  },
+  "Careers": {
+    "title": "Build the Future with Us – Join Our Team!",
+    "copy": "We’re a team of passionate developers, designers, and problem-solvers who craft high-quality web pages and digital solutions for businesses of all sizes. If you love building impactful projects, pushing creative boundaries, and working with a dynamic team, you’ll fit right in. Join us and help shape the future of the web—one project at a time! 🚀",
+    "button": "Get Started Today",
+    "jobOffersTitle": "Explore our new job offers",
+    "noJobsErrorMessage": "We currently don't have any open jobs"
+  },
+  "Footer": {    
+    "phone": "Phone",
+    "copy": "All rights reserved."
   }
 }

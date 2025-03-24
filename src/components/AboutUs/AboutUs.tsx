@@ -1,6 +1,10 @@
 import React from 'react'
+import { useTranslations, useLocale } from "next-intl";
 
 export const AboutUs = () => {
+  const t = useTranslations('AboutPage');
+  const locale = useLocale();
+
   return (
     <section className="bg-white text-black" id='about-us'>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
@@ -8,14 +12,10 @@ export const AboutUs = () => {
           <div>
             <div className="max-w-lg md:max-w-none">
               <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                Acerca de Nosotros
+                {t('title')}
               </h2>
 
-              <p className="mt-4 text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
-                architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
-                sequi.
-              </p>
+              <p className="mt-4 text-gray-700">{t('copy')}</p>
             </div>
           </div>
 
