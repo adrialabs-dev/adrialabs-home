@@ -5,7 +5,7 @@
     "getStartedButton": "Get Start",
     "learnMoreButton": "Learn More",
     "aboutUsTitle": "About Us",
-    "aboutUsBodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas sequi.",
+    "aboutUsBodyText": "We are a team of passionate developers, designers, and strategists dedicated to building high-quality digital solutions. Our mission is to help businesses thrive by creating innovative web and mobile experiences tailored to their needs.",
     "servicesTitle": "Our Services",
     "services1title": "Mobile App Development",
     "services1body": "We use the best technologies to bring your app idea to life, fully customized.",
@@ -25,6 +25,7 @@
     "title": "Hola mUndo"
   },
   "FormComponent": {
+    "title": "Contact us",
     "body": "Get in touch with us for more information or if you'd like a quote for a project. We'll be happy to assist you and provide all the advice you need to move forward with your project.",
     "placeHolderName": "Name",
     "placeHolderEmail": "Email",
@@ -46,8 +47,8 @@
     "rights": "2025. AdriaLabs. All rights reserved."
   }, 
   "CareersPage": {
-    "carrersTitle": "Explore our new recents job offers right down here",
-    "careersBodyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.",
+    "carrersTitle": "Build the Future with Us – Join Our Team!",
+    "careersBodyText": "We’re a team of passionate developers, designers, and problem-solvers who craft high-quality web pages and digital solutions for businesses of all sizes. If you love building impactful projects, pushing creative boundaries, and working with a dynamic team, you’ll fit right in. Join us and help shape the future of the web—one project at a time! 🚀",
     "careersButton": "See more",
     "listTitle": "Explore our new job offers:",
     "listNoJobsTitle": "Uh-oh!",

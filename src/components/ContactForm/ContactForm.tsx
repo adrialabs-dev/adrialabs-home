@@ -96,12 +96,14 @@ export const ContactForm = () => {
     <section className="bg-white" id='contact'>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="lg:col-span-2 lg:py-12 flex justify-center">
-            <p className="max-w-xl text-lg text-black">
+        <div className="lg:col-span-2 lg:py-12">
+            <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
+              {t('title')}
+            </h2>
+            <p className="max-w-xl text-lg text-black mt-4">
               {t('body')}
             </p>
           </div>
-
           <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form className="space-y-4" onSubmit={handleSubmit} method="POST">
               <div>
