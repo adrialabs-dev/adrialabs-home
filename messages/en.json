@@ -3,12 +3,54 @@
     "title": "Let's create your ",
     "title2": "Next Project.",
     "getStartedButton": "Get Start",
-    "learnMoreButton": "Learn More"
+    "learnMoreButton": "Learn More",
+    "aboutUsTitle": "About Us",
+    "aboutUsBodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas sequi.",
+    "servicesTitle": "Our Services",
+    "services1title": "Mobile App Development",
+    "services1body": "We use the best technologies to bring your app idea to life, fully customized.",
+    "services2title": "Web Development & E-commerce",
+    "services2body": "Want to start selling online quickly? We can create your customized platform so you can start as soon as possible.",
+    "services3title": "Consulting Services",
+    "services3body": "We can help you with everything you need to launch your business, as well as provide guidance on the technologies you want to use.",
+    "servicesButton": "Get Started Today!"
   },
   "NavMenu": {
     "about": "About us",
     "services": "Services",
     "contact": "Contact us",
     "careers": "Careers"
+  },
+  "CarrerPage": {
+    "title": "Hola mUndo"
+  },
+  "FormComponent": {
+    "body": "Get in touch with us for more information or if you'd like a quote for a project. We'll be happy to assist you and provide all the advice you need to move forward with your project.",
+    "placeHolderName": "Name",
+    "placeHolderEmail": "Email",
+    "placeHolderPhoneNumber": "Phone Number",
+    "placeHolderMessage": "Message",
+    "button": "Send Message",
+    "buttonEnviando": "Sending...",
+    "nameError": "Name Required",
+    "emailError": "Email Required",
+    "phoneNumberError": "Phone Number Required",
+    "messageError": "Message Required"
+  },
+  "Footer": {
+    "footerAbout": "About us",
+    "footerServices": "Services",
+    "footerContact": "Contact us",
+    "footerCareers": "Careers",
+    "phone": "Phone",
+    "rights": "2025. AdriaLabs. All rights reserved."
+  }, 
+  "CareersPage": {
+    "carrersTitle": "Explore our new recents job offers right down here",
+    "careersBodyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.",
+    "careersButton": "See more",
+    "listTitle": "Explore our new job offers:",
+    "listNoJobsTitle": "Uh-oh!",
+    "listNoJobsBodyText": "We currently don't have any open jobs."
   }
 }

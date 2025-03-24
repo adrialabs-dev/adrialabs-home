@@ -3,11 +3,14 @@ import { setUserLocale } from "app/services/locale";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export const Header = () => {
   const t = useTranslations('NavMenu');
   const locale = useLocale();
+  const currentPath = usePathname()
+  const router = useRouter();
 
   const items = [
     {
@@ -27,16 +30,29 @@ export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
-    e.preventDefault();
-    const element = document.querySelector(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-    setShowMenu(false);
-  };
+      e.preventDefault();
+      if (currentPath !== '/') {
+        router.push('/');
+        setTimeout(() => {
+          const element = document.querySelector(id);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }
+      setShowMenu(false);
+    };
 
   return (
     <header className="bg-white fixed w-full top-0 pt-6 pb-6 lg:pt-0 lg:pb-0 lg:top-0 z-10">
@@ -84,23 +100,20 @@ export const Header = () => {
             <div className="flex items-center gap-4">
               <div className="hidden md:block">
                 <div className="flex gap-2">
-                  <Link
-                    href={`/`}
-                    // locale="en"
-                    className={`text-gray-900 hover:text-gray-600 ${locale === 'en' ? 'font-bold' : ''}`}
+                  <a
+                    className={`text-gray-900 hover:text-gray-600 cursor-pointer ${locale === 'en' ? 'font-bold' : ''}`}
                     onClick={() => setUserLocale('en')}
+
                   >
                     EN
-                  </Link>
+                  </a>
                   <span className="text-gray-900">|</span>
-                  <Link
-                    href={`/`}
-                    // locale="es"
-                    className={`text-gray-900 hover:text-gray-600 ${locale === 'es' ? 'font-bold' : ''}`}
+                  <a
+                    className={`text-gray-900 hover:text-gray-600 cursor-pointer ${locale === 'es' ? 'font-bold' : ''}`}
                     onClick={() => setUserLocale('es')}
                   >
                     ES
-                  </Link>
+                  </a>
                 </div>
               </div>
 

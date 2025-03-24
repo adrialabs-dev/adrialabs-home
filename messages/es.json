@@ -3,12 +3,51 @@
     "title": "Hagamos realidad tu",
     "title2": "próximo proyecto.",
     "getStartedButton": "Empecemos",
-    "learnMoreButton": "Conoce más"
+    "learnMoreButton": "Conoce más",
+    "aboutUsTitle": "Acerca de Nosotros",
+    "aboutUsBodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas sequi.",
+    "servicesTitle": "Nuestros Servicios",
+    "services1title": "Desarrollo de Aplicaciones Móviles",
+    "services1body": "Usamos las mejores tecnologias para traer a la vida tu idea de aplicación, totalmente personalizada.",
+    "services2title": "Desarrollo de Aplicaciones Web y E-commerce",
+    "services2body": "Quieres empezar a vender rapidamente a través de la web? Podemos crear tu plataforma personaliazada para poder empezar lo antes posible",
+    "services3title": "Servicio de Consultoria",
+    "services3body": "Podemos ayudarte con lo que necesitas para poder iniciar tu negocio, ademas de proporcionar asesoramiento en las tecnologias que deseas usar.",
+    "servicesButton": "Empieza hoy!"
   },
   "NavMenu": {
     "about": "Nosotros",
     "services": "Servicios",
     "contact": "Contacto",
     "careers": "Carreras"
+  },
+  "FormComponent": {
+    "body": "Ponte en contacto con nosotros para más información o si es que quieres cotizar algún proyecto, estaremos encatados de poder atenderte y brindate toda la asesoria posible para que lleves adelante tu proyecto.",
+    "placeHolderName": "Nombre",
+    "placeHolderEmail": "Correo",
+    "placeHolderPhoneNumber": "Número de Telefóno",
+    "placeHolderMessage": "Mensaje",
+    "button": "Enviar Mensaje",
+    "buttonEnviando": "Enviando...",
+    "nameError": "Nombre requerido",
+    "emailError": "Correo required",
+    "phoneNumberError": "Número de teléfono requerido",
+    "messageError": "Mensaje requerido"
+  },
+  "Footer": {
+    "footerAbout": "Nosotros",
+    "footerServices": "Servicios",
+    "footerContact": "Contacto",
+    "footerCareers": "Carreras",
+    "phone": "Teléfono",
+    "rights": "2025. AdriaLabs. All rights reserved."
+  },
+  "CareersPage": {
+    "carrersTitle": "Explora nuestras recientes ofertas aquí abajo",
+    "careersBodyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.",
+    "careersButton": "Mira más",
+    "listTitle": "Explora nuestras ofertas de trabajo:",
+    "listNoJobsTitle": "Oh no!",
+    "listNoJobsBodyText": "Parece que actualmente no tenemos ofertas que mostrar."
   }
 }
