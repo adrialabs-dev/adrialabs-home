@@ -1,10 +1,9 @@
 import React from 'react'
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export const AboutUs = () => {
   const t = useTranslations('HomePage');
-  const locale = useLocale();
 
   return (
     <section className="bg-white text-black" id='about-us'>
