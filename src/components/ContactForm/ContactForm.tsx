@@ -1,18 +1,19 @@
 'use client'
 import axios from 'axios';
 import { useTranslations } from 'next-intl';
-import React, { ChangeEvent, FormEvent, useState } from 'react'
-
+import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react'
 
 export const ContactForm = () => {
-
   const t = useTranslations('FormComponent');
-
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("")
+  const [responseMessage, setResponseMessage] = useState({
+    success: "",
+    error: ""
+  })
 
   const [errors, setErrors] = useState({
     name: "",
@@ -41,6 +42,15 @@ export const ContactForm = () => {
     setPhoneNumber(e.target.value)
     setErrors((prevErrors) => ({ ...prevErrors, phoneNumber: "" }))
   }
+
+  useEffect(() => {
+    if(responseMessage.error || responseMessage.success) {
+      setTimeout(() => {
+       setResponseMessage({error: "", success: ""})
+      }, 5000)
+    }
+
+  }, [responseMessage.error, responseMessage.success])
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -78,15 +88,19 @@ export const ContactForm = () => {
       })
       .then((response) => {
         if (response.status == 200) {
-          setLoading(false);
           setName("");
           setEmail("");
           setMessage("");
           setPhoneNumber("")
         }
-        console.log(response);
+        setResponseMessage({success: t('response.success'), error: ''})
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        setResponseMessage({success: '', error: t('response.error')});
+      })
+      .finally(() => {
+        setLoading(false);
+      })
   };
 
 
@@ -166,11 +180,17 @@ export const ContactForm = () => {
                   <p className="text-red-500 text-sm">{errors.message}</p>
                 )}
               </div>
-
+              {responseMessage.error && (
+                  <p className="text-red-800 text-sm bg-red-50 inline-block p-2 mt-8">{responseMessage.error}</p>
+              )}
+              {responseMessage.success && (
+                  <p className="text-green-800 text-sm bg-green-50 inline-block p-2 mt-8">{responseMessage.success}</p>
+              )}
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-block w-full border rounded-lg bg-brand-color-blue hover:border-brand-color-blue hover:bg-white px-5 py-3 font-medium hover:text-brand-color-blue transform transition-transform duration-300 hover:scale-110 text-white sm:w-auto"
+                  className="inline-block w-full border rounded-lg bg-brand-color-blue hover:border-brand-color-blue hover:bg-white px-5 py-3 font-medium hover:text-brand-color-blue transform transition-transform duration-300 hover:scale-110 text-white sm:w-auto disabled:bg-gray-400 disabled:text-white disabled:cursor-not-allowed disabled:border-white"
+                  disabled={loading}
                 >
                   {loading ? t('buttonEnviando') : t('button')}
                 </button>

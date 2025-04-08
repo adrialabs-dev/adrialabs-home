@@ -36,7 +36,11 @@
     "nameError": "Name Required",
     "emailError": "Email Required",
     "phoneNumberError": "Phone Number Required",
-    "messageError": "Message Required"
+    "messageError": "Message Required",
+    "response" : {
+      "success": "Message submitted successfully",
+      "error": "Something went wrong. Please try again"
+    }
   },
   "Footer": {
     "footerAbout": "About us",

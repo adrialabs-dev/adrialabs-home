@@ -10,9 +10,9 @@ export const Hero = () => {
       <BackgroundAnimation />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="absolute inset-0 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+      <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-24 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-white animate-slide-up">
+          <h1 className="text-3xl font-extrabold sm:text-5xl text-white animate-slide-up mt-8 sm:text-left">
           {t('title')}
             <strong className="block font-extrabold text-white animate-slide-up">
             {t('title2')}
