@@ -95,7 +95,7 @@ export const ContactForm = () => {
         }
         setResponseMessage({success: t('response.success'), error: ''})
       })
-      .catch((error) => {
+      .catch(() => {
         setResponseMessage({success: '', error: t('response.error')});
       })
       .finally(() => {
