@@ -33,7 +33,11 @@
     "nameError": "Nombre requerido",
     "emailError": "Correo requerido",
     "phoneNumberError": "Número de teléfono requerido",
-    "messageError": "Mensaje requerido"
+    "messageError": "Mensaje requerido",
+    "response" : {
+      "success": "Mensaje enviado correctamente",
+      "error": "Algo salió mal. Inténtalo nuevamente"
+    }
   },
   "Footer": {
     "footerAbout": "Nosotros",
