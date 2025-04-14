@@ -16,12 +16,12 @@ export const Footer = () => {
   const socialLinks = [
     {
       name: 'Instagram',
-      link: '/',
+      link: 'https://www.instagram.com/adrialabsdev/',
       icon: '/images/icons8-instagram.svg'
     },
     {
       name: 'LinkedIn',
-      link: '/',
+      link: 'https://www.linkedin.com/company/adrialabs/',
       icon: '/images/icons8-linkedin.svg'
     },
     // {
