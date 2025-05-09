@@ -2,6 +2,7 @@
 import React from "react";
 import { ServiceCard } from "../ServiceCard/ServiceCard";
 import { useTranslations } from "next-intl";
+import LogoCarousel from "../LogoCarousel/LogoCarousel";
 
 export const Servicios = () => {
   const t = useTranslations('HomePage');
@@ -34,6 +35,13 @@ export const Servicios = () => {
     }
   };
 
+  const logos = [
+    'https://files.catbox.moe/thumbs/t_nxe158.png',
+    'https://files.catbox.moe/thumbs/t_410qo8.png',
+    'https://files.catbox.moe/thumbs/t_ywh6ev.png',
+    'https://files.catbox.moe/thumbs/t_8o0tyc.png'
+  ]
+
   return (
     <section className="bg-brand-color-blue text-white" id="services">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -58,6 +66,7 @@ export const Servicios = () => {
           </button>
         </div>
       </div>
+      <LogoCarousel title={t('logoCarousel')} logos={logos}/>
     </section>
   );
 };
