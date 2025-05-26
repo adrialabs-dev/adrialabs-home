@@ -39,7 +39,8 @@ export const Servicios = () => {
     'https://files.catbox.moe/thumbs/t_nxe158.png',
     'https://files.catbox.moe/thumbs/t_410qo8.png',
     'https://files.catbox.moe/thumbs/t_ywh6ev.png',
-    'https://files.catbox.moe/thumbs/t_8o0tyc.png'
+    'https://files.catbox.moe/thumbs/t_8o0tyc.png',
+    'https://files.catbox.moe/thumbs/t_23grya.png'
   ]
 
   return (
